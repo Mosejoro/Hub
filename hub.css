@@ -1,0 +1,79 @@
+header img{
+    width: 7rem;
+}
+.B{
+    margin-top: 10rem;   
+    margin-bottom: 2rem;   
+    gap: 5rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.Z{
+    display: none;
+}
+.B img{
+    width: 40rem;
+}
+
+.R{
+    background-image: url(Images/digital-background.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.T{
+    justify-content: space-between;
+    gap: 20px;
+}
+.R img{
+    border-radius: 50%;
+    border:5px solid rgb(1, 65, 65);
+}
+.A{
+    background-image: url(Images/Sao.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:top;
+}
+.L{
+    font-size: 20px;
+    text-align: center;
+    font-weight: 900;
+    padding: 50px;
+}
+
+.time-segment{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.541);
+    border: 5px solid white;
+    width: 140px;
+    height: 140px;
+    border-radius: 99px;
+}
+.time-segment span{
+    font-size: 50px;
+    font-weight: 900;
+    
+}
+.time-segment p{
+    font-weight: 600;
+   font-size: 20px;
+}
+.main img{
+    border-radius: 50%;
+    width: 30rem;
+    border: 10px solid gray;
+}
+
+.J img {
+    border-radius: 50%;
+    width: 20rem;
+    border: 10px solid gray;
+}
+.NM img{
+    width: 50rem;
+    height: 50rem;
+}
