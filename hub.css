@@ -1,0 +1,120 @@
+header img{
+    width: 7rem;
+}
+header{
+    background-color: rgba(0, 0, 0, 0.4);
+}
+.navbar-nav a {
+    color: white;
+}
+.B{
+    margin-top: 10rem;   
+    margin-bottom: 2rem;   
+    gap: 5rem;
+    background-image: url(Images/dig.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 5rem;
+    background-color:rgba(0, 0, 0, 0.2) ;
+}
+.B h1{
+    font-size: 35px;
+    font-weight: 800;
+}
+.Z{
+    display: none;
+}
+.B img{
+    width: 40rem;
+}
+
+.R{
+    background-image: url(Images/digital-background.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.T{
+    justify-content: space-between;
+    gap: 20px;
+}
+.R img{
+    border-radius: 50%;
+    border:5px solid rgb(1, 65, 65);
+}
+.A{
+    background-image: url(Images/Sao.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:top;
+}
+.L{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:top;
+    font-size: 35px;
+    background-image: url(Images/paul.jpg);
+    text-align: center;
+    font-weight: 900;
+    padding: 50px;
+}
+
+.time-segment{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.541);
+    border: 5px solid white;
+    width: 140px;
+    height: 140px;
+    border-radius: 99px;
+}
+.time-segment span{
+    font-size: 50px;
+    font-weight: 900;
+    
+}
+.time-segment p{
+    font-weight: 600;
+   font-size: 20px;
+}
+.main img{
+    border-radius: 50%;
+    width: 15rem;
+    border: 10px solid gray;
+}
+
+.J img {
+    border-radius: 50%;
+    width: 10rem;
+    border: 10px solid gray;
+}
+.NM img{
+    width: 50rem;
+    height: 50rem;
+}
+.BZ{
+    box-shadow: 3px 5.5px 16px 5px gray;
+
+}
+#About{
+    background-image: url(Images/ccc.jfif);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position:center;
+
+}
+#About h1{
+    font-size: 40px;
+    font-weight: 900;
+}
+#About p{
+    font-weight: 700;
+    font-size: 20px;
+}
+@media screen and (max-width:767px) {
+    #Home{
+        margin-top: 0;
+    }
+}
