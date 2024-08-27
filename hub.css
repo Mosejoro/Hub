@@ -15,14 +15,14 @@ header img{
 header{
     background-color:#2e8a43;
 }
-.U{
-    background-color: #005720;
-    font-size: 1.5rem;
-}
 .U:hover{
+    background-color: #0dc952;
+  }
+  .U{
     background-color: transparent;
+    font-size: 1.5rem;
     border: #005720 2px solid;
-}
+  }
 
 .navbar-nav a {
     color: white;
@@ -81,9 +81,8 @@ header{
    
 }
 .L{
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position:top;
+    background-blend-mode: multiply;
+    background-color: rgba(3, 53, 15, 0.418);
     font-size: 35px;
     text-align: center;
     font-weight: 900;
@@ -134,12 +133,13 @@ header{
     background-repeat: no-repeat;
     background-size: contain;
     background-position:center;
+    background-blend-mode: multiply;
+    background-color: rgba(0, 0, 0, 0.541);
 
 }
 #About h1{
     font-size: 40px;
     font-weight: 900;
-    padding-bottom: 20rem;
 }
 #About p{
     margin-top: 2rem;
@@ -209,7 +209,7 @@ header{
         left: -3px;
         border-radius: 75%;
         z-index: 3;
-        border: 10px solid #005720;
+        border: 10px solid #0dc952;
         box-shadow: rgba(96, 75, 74, 0.1882352941) 0px 5px 5px 0px;
         transition: all 0.5s ease-in-out, z-index 0.5s ease-in-out 0.1s;
       }
@@ -303,7 +303,7 @@ header{
     bottom: 3px;
     left: 3px;
     right: 3px;
-    background: #005720;
+    background: #0dc952;
     top: 80%;
     border-radius: 29px;
     z-index: 2;
@@ -397,8 +397,8 @@ header{
     left: 10px;
     border-radius: 50%;
     z-index: 3;
-    border: 7px solid #005720;
-    box-shadow: rgba(96, 75, 74, 0.1882352941) 0px 5px 5px 0px;
+    border: 7px solid #0dc952;
+    box-shadow: rgba(96, 75, 74, 0.1882352941) 0px 5px 15px 0px;
     transition: all 0.5s ease-in-out, z-index 0.5s ease-in-out 0.1s;
   }
   .Sp .card:hover .profile-pic {
@@ -408,7 +408,7 @@ header{
     left: -3px;
     border-radius: 75%;
     z-index: 3;
-    border: 10px solid #005720;
+    border: 10px solid #0dc952;
     box-shadow: rgba(96, 75, 74, 0.1882352941) 0px 5px 5px 0px;
     transition: all 0.5s ease-in-out, z-index 0.5s ease-in-out 0.1s;
   }
@@ -439,7 +439,7 @@ header{
 
 /* Ticket */
 .ticket-section {
-    background-color: #005720;
+    background-color: #0dc952;
     display: flex;
     justify-content: space-between;
     align-items: center;
