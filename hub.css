@@ -72,11 +72,12 @@ header{
     border-radius: 50%;
     border:5px solid rgb(1, 65, 65);
 }
-.A{
+.A, .L{
     background-image: url(Images/Sao.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position:top;
+    background-attachment: fixed;
    
 }
 .L{
@@ -84,7 +85,6 @@ header{
     background-size: cover;
     background-position:top;
     font-size: 35px;
-    background-image: url(Images/paul.jpg);
     text-align: center;
     font-weight: 900;
     padding: 50px;
@@ -193,7 +193,7 @@ header{
         height: 160px;
       }
       .Sp .card {
-        width: 250px;
+        width: 300px;
         height: 200px;
         background: white;
         border-radius: 32px;
@@ -413,10 +413,10 @@ header{
     transition: all 0.5s ease-in-out, z-index 0.5s ease-in-out 0.1s;
   }
   
-  .card:hover .profile-pic:hover {
+  /* .card:hover .profile-pic:hover {
     transform: scale(1.5);
     border-radius: 0px;
-  }
+  } */
   
   .card:hover .profile-pic img {
     transform: scale(1.3);
@@ -443,7 +443,7 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 4rem;
+    padding: 2rem;
 }
 .ticket-card {
     border: none;
@@ -475,7 +475,6 @@ header{
     cursor: pointer;
 }
 .account-number {
-    background-color: #f8f9fa;
     border: 1px dashed #ced4da;
     border-radius: 5px;
     padding:10px 3rem;
@@ -483,6 +482,7 @@ header{
     font-family: monospace;
     font-size: 1rem;
     width: 100%;
+    color: white;
 }
 .copy-btn {
     position: relative;
@@ -491,10 +491,11 @@ header{
     background: none;
     border: none;
     cursor: pointer;
+    color: white;
     padding: 5px;
 }
 .copy-btn:hover {
-    background-color: #e9ecef;
+    background-color: green;
     border-radius: 3px;
 }
 .copy-btn .bi-clipboard,
