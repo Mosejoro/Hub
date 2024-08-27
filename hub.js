@@ -1,4 +1,4 @@
-const targetDate = new Date("2024-10-22 10:00:00"); // Set your target date and time here
+const targetDate = new Date("2024-10-27 10:00:00"); // Set your target date and time here
 
 const countdown = document.getElementById("countdown");
 
@@ -37,38 +37,59 @@ const updateTime = () => {
 const intervalId = setInterval(updateTime, 1000); // Update time every second
 
 // Header
-function smoothScroll(target) {
-  const targetElement = document.getElementById(target);
-  const headerHeight = document.querySelector('header').offsetHeight; // Adjust selector for your header
+// function smoothScroll(target) {
+//   const targetElement = document.getElementById(target);
+//   const headerHeight = document.querySelector('header').offsetHeight; // Adjust selector for your header
 
-  const scrollY = window.scrollY || document.documentElement.scrollTop;
-  const targetY = targetElement.offsetTop - headerHeight; // Subtract header height to avoid overlapping
+//   const scrollY = window.scrollY || document.documentElement.scrollTop;
+//   const targetY = targetElement.offsetTop - headerHeight; // Subtract header height to avoid overlapping
 
-  const distance = targetY - scrollY;
-  let start = null;
+//   const distance = targetY - scrollY;
+//   let start = null;
 
-  requestAnimationFrame(step);
+//   requestAnimationFrame(step);
 
-  function step(timestamp) {
-    if (!start) start = timestamp;
-    const progress = timestamp - start;
-    const ease = progress / 500; // Adjust for desired speed
-    const y = ease * distance + scrollY;
-    window.scrollTo(0, y);
-    if (ease < 1) {
-      requestAnimationFrame(step);
-    }
-  }
+//   function step(timestamp) {
+//     if (!start) start = timestamp;
+//     const progress = timestamp - start;
+//     const ease = progress / 500; // Adjust for desired speed
+//     const y = ease * distance + scrollY;
+//     window.scrollTo(0, y);
+//     if (ease < 1) {
+//       requestAnimationFrame(step);
+//     }
+//   }
+// }
+
+// // Attach the smooth scroll function to your links
+// const links = document.querySelectorAll('header a[href^="#"]'); // Select links starting with "#"
+
+// links.forEach(link => {
+//   link.addEventListener('click', function(e) {
+//     e.preventDefault(); // Prevent default jumping behavior
+//     const target = this.getAttribute('href').substring(1); // Extract target section ID
+//     smoothScroll(target);
+//   });
+// });
+// Header
+
+
+// Account
+function copyToClipboard(elementId, button) {
+  var text = document.getElementById(elementId).innerText;
+  navigator.clipboard.writeText(text).then(function() {
+      // Change icon to checkmark
+      button.querySelector('.bi-clipboard').style.display = 'none';
+      button.querySelector('.bi-check').style.display = 'inline-block';
+
+      // Revert back after 2 seconds
+      setTimeout(function() {
+          button.querySelector('.bi-clipboard').style.display = 'inline-block';
+          button.querySelector('.bi-check').style.display = 'none';
+      }, 2000);
+  }, function(err) {
+      console.error('Could not copy text: ', err);
+  });
 }
 
-// Attach the smooth scroll function to your links
-const links = document.querySelectorAll('header a[href^="#"]'); // Select links starting with "#"
-
-links.forEach(link => {
-  link.addEventListener('click', function(e) {
-    e.preventDefault(); // Prevent default jumping behavior
-    const target = this.getAttribute('href').substring(1); // Extract target section ID
-    smoothScroll(target);
-  });
-});
-// Header
+// Account

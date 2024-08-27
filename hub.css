@@ -192,7 +192,36 @@ header{
         right: 1.5rem;
         height: 160px;
       }
-      
+      .Sp .card {
+        width: 250px;
+        height: 200px;
+        background: white;
+        border-radius: 32px;
+        padding: 3px;
+        position: relative;
+        box-shadow: #604b4a30 0px 70px 30px -50px;
+        transition: all 0.5s ease-in-out;
+      }
+      .Sp .card:hover .profile-pic {
+        width: 140px;
+        height: 140px;
+        top: 65px;
+        left: -3px;
+        border-radius: 75%;
+        z-index: 3;
+        border: 10px solid #005720;
+        box-shadow: rgba(96, 75, 74, 0.1882352941) 0px 5px 5px 0px;
+        transition: all 0.5s ease-in-out, z-index 0.5s ease-in-out 0.1s;
+      }
+      .Sp .card:hover .profile-pic img {
+        transform: scale(1.2);
+        -o-object-position: 0px 25px;
+        object-position: -5px 2px;
+        transition: all 0.5s ease-in-out 0.2s;
+      }
+    .ticket-body{
+        padding: 5px;
+    }
 
 }
 /* New */
@@ -294,6 +323,7 @@ header{
   .card .bottom .content .name {
     display: block;
     font-size: 1.2rem;
+    margin-top: -5px;
     color: white;
     font-weight: bold;
   }
@@ -302,7 +332,6 @@ header{
     display: block;
     font-size: 0.9rem;
     color: white;
-    margin-top: 1rem;
     transition: all 0.1 ease;
   }
   .card .about-me:hover{
